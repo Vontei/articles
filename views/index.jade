@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 NYT Article Search
+  form(action='/' method='post')
+    input(type='text' name='search')
+    input(type='submit' value='Search')
+  
+  
+  if res
+    div(id='results')
+      each val in res
+        p(id='title')
+          a(href=val.web_url)= val.snippet
