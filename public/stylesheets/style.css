@@ -26,7 +26,22 @@ background:#99f973;
 }
 
 
+#input{
+  text-align: center;
+  width: 200px;
+  height: 20px;
+  background-color: black;
+  color: #00B7FF;
+  border: 2px solid #36fd08;
+}
 
+#button{
+  width: 75px;
+  height: 26px;
+  border: 2px solid #36fd08;
+  color: #36fd08;
+  background: transparent
+}
 
 h1{
   color:#36fd08;

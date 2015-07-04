@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req,res,next){
   var query = req.body.search;
-  var req = unirest.get('http://api.nytimes.com/svc/search/v2/articlesearch.json?q='+ query +'&api-key=' + '9fed8617bb3db63df0527f89463b67ef:15:72435478')
+  var req = unirest.get('http://api.nytimes.com/svc/search/v2/articlesearch.json?q='+ query +'&api-key=' + process.env.KEY)
   .end(function(response){
     var x = response.body.response.docs;
     res.render('index', { title: 'Express', res: x});
