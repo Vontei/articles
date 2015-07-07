@@ -12,3 +12,7 @@ block content
       each val in res
         p(id='title')
           a(href=val.web_url)= val.snippet
+        
+        //- iframe(src=val.web_url id='frame' height='300' width='800')
+
+  script(src='/javascripts/dom.js')
